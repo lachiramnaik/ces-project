@@ -238,13 +238,14 @@ nav .logo img{
 
 .cards{
   max-width: 1100px;
-  margin: 100px auto;
+  margin: 120px auto;
   text-align: center;
   padding: 20px;
 }
 .cards h2.header{
-  font-size: 40px;
-  margin: 0 0 30px 0;
+  font-size: 35px;
+  margin: 0 0 50px 0;
+  color: #cc0044;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -253,7 +254,7 @@ nav .logo img{
   align-items: center;
 }
 .content{
-  height: 100px;
+  height: 80px;
   width: 300px;
   display: flex;
   flex-wrap: wrap;
@@ -273,49 +274,24 @@ nav .logo img{
   flex: 1 1 100%;
 }
 .content:hover{
-  color: white;
+  color:;
 }
-.content:hover a{
-  border-color: white;
-  background: white;
-}
-.content-1:hover{
-  border-color: #1DA1F2;
-  background: #1DA1F2;
-}
-.content-1:hover a{
-  color: #1DA1F2;
-}
-.content-2:hover{
-  border-color: #E1306C;
-  background: #E1306C;
-}
-.content-2:hover a{
-  color: #E1306C;
-}
-.content-3:hover{
-  border-color: #ff0000;
-  background: #ff0000;
-}
-.content-4:hover{
-  border-color: #ff0000;
-  background: orange;
-}
-.content-3:hover a{
-  color: #ff0000;
-}
+.content a:hover{
+
+  color: #B22222;}
+
 .content h2{
-  font-size: 20px;
+  font-size: 15px;
   margin: 16px 0;
   letter-spacing: 1px;
   text-transform: ;
 
 }
-
-
-.content a:hover{
-  border-radius: 4px;
+.content a{
+  text-decoration:none;
+  color: black;
 }
+
 @media (max-width: 900px) {
   .services{
     display: flex;
@@ -323,90 +299,103 @@ nav .logo img{
   }
 }
 
+#section-1 h1{
+justify-content: center;
+text-align: center;
+padding: 25px;
+}
+
+.box-bord {
+margin : auto 10% 30px 10%;
+border: 0px solid black;
+box-shadow: 0px 2px 8px #bfbfbf;
+border-radius: 4px;
+transition: all .3s ease;
+}
+
+#section-2 h1{
+justify-content: center;
+text-align: center;
+padding: 25px;
+}
+
+#section-3 h1{
+justify-content: center;
+text-align: center;
+padding: 25px;
+}
+
+#section-4 h1{
+justify-content: center;
+text-align: center;
+padding: 25px;
+}
+
+#section-5 h1{
+justify-content: center;
+text-align: center;
+padding: 25px;
+}
 
 
+#section-6 h1{
+justify-content: center;
+text-align: center;
+padding: 25px;
+}
 
 
+#section-7 h1{
+justify-content: center;
+text-align: center;
+padding: 25px;
+}
 
-.cards-1{
-  max-width: 1100px;
-  margin: 0 auto;
+.indent{
+padding: 30px;
+}
+
+.box-bord h1{
+  color: #00003d;
+}
+
+.indent h3{
+color: #cc0044;
+}
+
+.indent h4{
+color: #cc0044;
+font-weight: normal;
+}
+
+.indent a{
+  text-decoration: none;
+  color : #6600cc;
+}
+
+.indent button{
+
+  border : 2px solid black;
+  border-radius: 8px;
+  /*margin-left: 45%;*/
+}
+
+.indent button a{
+font-size: 300%;
+padding : 5px;
+color : #ff6600;
+font-family: Georgia;
+
+}
+.dis{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.para_font{
+  font-size: 28px;
   text-align: center;
-  padding: 30px;
 }
-
-.services-1{
-  display: flex;
-  align-items: center;
-}
-.content-0{
-  height: 100px;
-  width: 300px;
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1;
-  margin: 20px;
-  padding: 20px;
-  border: 0px solid black;
-  box-shadow: 0px 2px 8px #bfbfbf;
-  border-radius: 4px;
-  transition: all .3s ease;
-}
-.content-0 .fab{
-  font-size: 70px;
-  margin: 16px 0;
-}
-.content-0 > *{
-  flex: 1 1 100%;
-}
-.content-0:hover{
-  color: white;
-}
-.content-0:hover a{
-  border-color: white;
-  background: white;
-}
-.content-1:hover{
-  border-color: #1DA1F2;
-  background: #1DA1F2;
-}
-.content-1:hover a{
-  color: #1DA1F2;
-}
-.content-2:hover{
-  border-color: #E1306C;
-  background: #E1306C;
-}
-.content-2:hover a{
-  color: #E1306C;
-}
-.content-3:hover{
-  border-color: #ff0000;
-  background: #ff0000;
-}
-.content-3:hover a{
-  color: #ff0000;
-}
-.content h2{
-  font-size: 20px;
-  margin: 16px 0;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-
-}
-
-.content a:hover{
-  border-radius: 4px;
-}
-@media (max-width: 900px) {
-  .services-1{
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-
-
 
 
 
