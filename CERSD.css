@@ -8,6 +8,10 @@
   font-family: 'Montserrat',sans-serif;
   scroll-behavior: smooth;
 }
+body{
+  background: #e6f2ff;
+  /*background:#e6e6ff;*/
+}
 body::selection{
   color: white;
   background: #0089f2;
@@ -265,6 +269,7 @@ nav .logo img{
   box-shadow: 0px 2px 8px #bfbfbf;
   border-radius: 4px;
   transition: all .3s ease;
+  background: #fff;
 }
 .content .fab{
   font-size: 70px;
@@ -273,12 +278,48 @@ nav .logo img{
 .content > *{
   flex: 1 1 100%;
 }
+
 .content:hover{
+  color: white;
+}
+.content:hover a{
+  border-color: white;
+  /*background: white;*/
+}
+.content-1:hover{
+  border-color: #1DA1F2;
+  background: #1DA1F2;
+}
+.content-1:hover a{
+  color: #fff;
+}
+.content-2:hover{
+  border-color: #E1306C;
+  background: #E1306C;
+}
+.content-2:hover a{
+  color: #fff;
+}
+.content-3:hover{
+  border-color: #40bf40;
+  background: #40bf40;
+}
+.content-4:hover{
+  border-color: #ff0000;
+  background: orange;
+}
+.content-3:hover a{
+  color: #fff;
+}
+.content-4:hover a{
+  color: #fff;
+}
+/*.content:hover{
   color:;
 }
 .content a:hover{
 
-  color: #B22222;}
+  color: #B22222;}*/
 
 .content h2{
   font-size: 15px;
@@ -311,6 +352,7 @@ border: 0px solid black;
 box-shadow: 0px 2px 8px #bfbfbf;
 border-radius: 4px;
 transition: all .3s ease;
+background: #fff;
 }
 
 #section-2 h1{
