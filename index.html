@@ -15,6 +15,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1GTEXXFW17"></script>
 <script>
@@ -24,19 +25,52 @@
 
   gtag('config', 'G-1GTEXXFW17');
 </script>
+
+
 	<style>
 /* Make the image fully responsive */
 		.carousel{
-			margin-top : 110px;
+			margin-top : 105px;
 		}
 		.carousel-inner img {
 			width: 100%;
 			height: 100%;
-			max-height : 650px;
+			max-height: 550px;
+			
 		}
 		.decor{
 			font-family: Georgia;
 		}
+.decor{
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes slideInDown {
+  0% {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  }
+  }
+  @keyframes slideInDown {
+  0% {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  }
+  }
 
 	</style>
 </head>
@@ -143,7 +177,7 @@
 		    <div class="carousel-item active">
 		      <img class="d-block w-100" src=" ces/mess.jpg">
 					<div class="carousel-caption">
-						<h1 class="decor" > Civil Engineering Society <br> IIT Hyderabad </h1>
+						<h1 class="decor"> Civil Engineering Society <br> IIT Hyderabad </h1>
 					</div>
 		    </div>
 		    <div class="carousel-item">
@@ -240,7 +274,10 @@
         <div class="seminars and events">
           <h2 class="head">News</h2>
 					<marquee direction="up" scrollamount="2" height="250px"> IIT Hyderabad Inter-IIT Civil Contingent has finished 5th among 13 IITs
-						in the Inter-IIT Civil Conclave 2020 organized by IIT Roorkee during November 7th-8th.</marquee>
+						in the Inter-IIT Civil Conclave 2020 organized by IIT Roorkee during November 7th-8th.<br><br>
+						PM session conducted on 8th June<br><br>
+						Birth anniversary of father of civil engineering celebrated.
+					</marquee>
         </div>
 
 
@@ -300,7 +337,7 @@
   <div class="tabs-2">
  <h2>follow us</h2><center><hr></center><br>
  <a class="social"  href="https://www.facebook.com/CivilEngineeringSocietyIITHyderabad/"><i class="fab fa-facebook" aria-hidden="true"></i></a>
- <a class="social" href="https://instagram.com/civilengineeringsocietyiithyd?igshid=83eqbxmjfp8m"><i class="fab fa-instagram" aria-hidden="true"></i></a><br>
+ <a class="social" href="https://www.instagram.com/ces_iith/"><i class="fab fa-instagram" aria-hidden="true"></i></a><br>
  <a class="social" href="https://youtube.com/channel/UCaNcGV6cJQt3S1ykonNIq7g"><i class="fab fa-youtube" aria-hidden="true"></i></a>
  <a class="social" href="https://www.linkedin.com/company/civil-engineering-society-iit-hyderabad"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
 </div>
