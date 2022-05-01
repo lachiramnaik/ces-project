@@ -1,0 +1,435 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+  scroll-behavior: smooth;
+}
+body{
+  background:#ecf0f1;
+}
+body::selection{
+  color: white;
+  background: #0089f2;
+}
+
+
+/*scrollbar design*/
+body::-webkit-scrollbar{
+  width: 12px;
+}
+body::-webkit-scrollbar-track{
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+body::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background:   #999999;
+}
+body::-webkit-scrollbar-thumb:hover{
+  background: ;
+}
+
+
+
+
+nav{
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  background: white;
+  box-shadow: 1px 1px 15px silver;
+  z-index: 1;
+  transition: top 0.3s;
+}
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+
+nav .logo img{
+  float: left;
+  color: ;
+  padding-top: 15px;
+  padding-left: 40px;
+  }
+nav ul{
+  float: right;
+  margin-right: 40px;
+  list-style: none;
+  position: relative;
+}
+nav ul li{
+  float: left;
+  display: inline-block;
+  background:white;
+  margin: 0 0px;
+}
+nav ul li a{
+  color: #666666;
+  line-height: 100px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+nav ul li a:hover{
+  color:black;
+
+}
+nav ul ul li a:hover{
+  box-shadow: none;
+}
+nav ul ul{
+  position: absolute;
+  top: 110px;
+  border-top: 0px solid cyan;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+}
+
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 280px;
+  float: none;
+  display: list-item;
+
+}
+nav ul ul li a{
+  line-height: 50px;
+  color: #666666;
+  background: white ;
+}
+
+.show,.icon,input{
+  display: none;
+}
+.fa-plus{
+  font-size: 15px;
+  margin-left: 40px;
+}
+
+@media all and (max-width: 1100px) {
+  nav ul{
+    margin: 0px;
+    text-align: center;
+
+  }
+
+
+  .show + a, ul{
+    display: none;
+
+  }
+  nav ul li,nav ul ul li{
+    display: block;
+    width: 100%;
+  }
+
+  nav ul li a{
+
+  line-height: 40px;
+  }
+nav ul ul li a{
+  line-height: 30px;
+}
+  nav ul ul {
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 8px;
+
+}
+  nav ul li a:hover{
+    box-shadow: none;
+  }
+  .show{
+    display: block;
+    color: #666666;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 40px;
+    cursor: pointer;
+  }
+  .show:hover{
+    color: black;
+  }
+  .icon{
+    display: block;
+    color: black;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    /*line-height: 100px;*/
+    cursor: pointer;
+    font-size: 30px;
+    /*border : 1px solid #777;*/
+    box-shadow: 0px 3px 6px #999999;
+    border-radius: 7px;
+    padding : 1px 7px;
+    margin-left : 10px;
+  }
+  nav ul ul{
+
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul a{
+    padding-left: 40px;
+  }
+
+  [id^=btn]:checked + ul{
+    display: block;
+    background: ;
+    width: 100%;
+    transition: all .5s ease;
+  }
+  nav ul ul li{
+    border-bottom: 0px;
+  }
+  span.cancel:before{
+    content: '\f00d';
+  }
+}
+@media all and (max-width: 500px) {
+
+nav .logo img{
+  width: 300px;
+  height: 80px;
+  line-height: 100px;
+  padding-left: 10px;
+}
+}
+@media all and (max-width: 350px) {
+nav .logo img{
+  width: 200px;
+  height: 80px;
+  line-height: 100px;
+  padding-left: 10px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.cards{
+  max-width: 99%;
+  margin-top: 105px;
+  padding: 0px;
+}
+
+.head1{
+  color : #34495e;
+  text-align: center;
+  font-size: 40px;
+  text-align: center;
+  justify-content: center;
+  text-transform:uppercase;
+  letter-spacing: 1px;
+
+}
+hr{
+  width: 250px;
+  height: 3px;
+  background:#34495e;
+  color: white;
+}
+.container{
+  background: white;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.matter{
+  margin-top: 30px;
+  line-height: 25px;
+  font-size: 20px;
+  word-spacing: 5px;
+}
+
+@media all and (max-width: 800px) {
+img{
+  margin-top: 20px;
+}
+}
+
+
+
+
+
+/**footer*/
+
+.footers{
+max-width:100%;
+  height: auto;
+ background: #262626  ;
+ }
+.footers h1{
+  padding-top: 20px;
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.footers hr{
+
+  width: 200px;
+  height: 3px;
+  background: white;
+}
+.footer-cards{
+  max-width: 100%;
+margin: 0 auto;
+  text-align: center;
+  padding: 0px;
+}
+
+.maintain{
+  display: flex;
+  align-items: center;
+}
+.box{
+ display:;
+ background:   ;
+
+
+  flex-wrap: wrap;
+  flex: 1;
+  margin: 10px;
+  padding: 0px;
+  border: 0px solid red;
+  border-radius: 4px;
+  transition: all .3s ease;
+}
+.tabs-1 a{
+  font-size: 20px;
+  line-height: 35px;
+  color: white;
+  text-decoration: none;
+}
+.tabs-1 a:hover{
+  color: #a6a6a6 ;
+  transition: all .5s ease;
+}
+.tabs-2 h2{
+  font-size: 28px;
+  color: white;
+}
+.tabs-2 hr{
+ width: 150px;
+  height: 3px;
+  background: white;
+
+}
+
+.tabs-2 a{
+  font-size: 35px;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  margin: 10px;
+}
+.tabs-2 a:hover{
+  color: #a6a6a6 ;
+  font-size: 32px;
+  transform: translate(0,0px);
+transition: all .8s ease;
+}
+.tabs-3 h2{
+  font-size: 28px;
+  color: white;
+}
+.tabs-3 hr{
+ width: 150px;
+  height: 3px;
+  background: white;
+
+}
+.tabs-3 p{
+  color: white;
+  line-height: 25px;
+}
+.tabs-3 a{
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+
+}
+.tabs-3 a:hover{
+  color: #a6a6a6 ;
+  transition: all .5s ease;
+
+}
+
+
+
+.footer-cards {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes slideInUp {
+  0% {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  }
+  }
+  @keyframes slideInUp {
+  0% {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  }
+  }
+
+@media (max-width: 980px) {
+/*footer*/
+.maintain{
+  display: flex;
+    flex-direction: column;
+}
+
+.box{
+  padding: 10px;
+    width: 90%;
+    background:#737373;
+    height: 600px;
+  }
+
+}
+
