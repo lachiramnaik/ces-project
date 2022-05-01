@@ -1,0 +1,151 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.footer {
+    
+    background: #0F2027;
+  
+ 
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  
+    padding: 20px;
+}
+
+.heading {
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+hr {
+    width: 200px;
+    padding: 1px;
+    background: white;
+    color: white;
+    border-radius: 50px;
+}
+
+.tab-1 {
+    padding-top: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.tab-1 a {
+    font-size: 23px;
+    line-height: 55px;
+    color: white;
+    text-decoration: none;
+}
+
+.tab-1 a:hover {
+    color: #a6a6a6;
+    transition: all .5s ease;
+}
+
+.tab-2 {
+    justify-content: center;
+    text-align: center;
+}
+
+.tab-2 h2 {
+    font-size: 28px;
+    color: white;
+}
+
+.tab-2 hr {
+    width: 90px;
+    height: 1px;
+    background: white;
+}
+
+.tab-2 a {
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+.tab-2 a:hover {
+    z-index: 1;
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    box-shadow: 0px 5px 30px #6CF1F4;
+    border-radius: 50px;
+}
+
+.tab-3 {
+    justify-content: center;
+    text-align: center;
+}
+
+.tab-3 h2 {
+    font-size: 28px;
+    color: white;
+}
+
+.tab-3 hr {
+    width: 100px;
+    height: 1px;
+    background: white;
+}
+
+.tab-3 p {
+    color: white;
+    line-height: 25px;
+}
+
+.tab-3 a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.tab-3 a:hover {
+    color: #a6a6a6;
+    transition: all .5s ease;
+}
+
+.tab-4 {
+    justify-content: center;
+    text-align: center;
+}
+
+.allrightreserved {
+    margin-top: 60px;
+    margin-bottom: -10px;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .tab-1 a {
+        line-height: 40px;
+    }
+    .tab-1,
+    .tab-2,
+    .tab-3,
+    .tab-4 {
+        margin: 10px;
+        padding: 15px;
+        background: #141E30;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #243B55, #141E30);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243B55, #141E30);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+}
